@@ -6,5 +6,8 @@ app = Flask(__name__)
 def home():
     return jsonify({"message": "Hello, World!"})
 
-if __name__ == '__main__':
+def run_server():
     app.run(host='0.0.0.0', port=80)
+
+if __name__ == '__main__':
+    run_server()
