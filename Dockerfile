@@ -3,6 +3,7 @@ FROM ubuntu:latest
 # Set the working directory in the container
 RUN apt-get update && apt-get install -y
 RUN apt-get install python3 -y
+RUN apt-get install pip -y
 
 WORKDIR /app
 
