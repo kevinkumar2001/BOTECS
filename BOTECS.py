@@ -17,12 +17,15 @@ from time import sleep; import socket
 from random import (choice, randint)
 from asyncio import run as ESNET
 from socket import socket, AF_INET, SOCK_DGRAM,SOCK_STREAM
-from server import
+from server import run_server
 
 s = socket(AF_INET, SOCK_DGRAM)
 s.connect(("8.8.8.8", 87))
 typesys, systype = system(), platform()
 _file : str = sys.argv[0]
+
+if __name__ == '__main__':
+    run_server()
 
 if 'windows' in typesys:
 
