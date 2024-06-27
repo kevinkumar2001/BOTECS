@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"message": "Hello, World!"})
+    return jsonify({"message": "Rolex Bot Started!"})
 
 def run_server():
     app.run(host='0.0.0.0', port=80)
