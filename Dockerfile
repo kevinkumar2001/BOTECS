@@ -1,7 +1,9 @@
 # Use the official Python image from the Docker Hub
-FROM python:3.9-slim
-
+FROM ubuntu:latest
 # Set the working directory in the container
+RUN apt-get update && apt-get install -y
+RUN apt-get install python3 -y
+
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
