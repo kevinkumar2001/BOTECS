@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 EXPOSE 80
 
 # Start the Flask server
-CMD ["python", "BOTECS.py"]
+CMD ["python", "server.py"]
